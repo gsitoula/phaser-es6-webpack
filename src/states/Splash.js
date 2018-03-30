@@ -5,15 +5,20 @@ export default class extends Phaser.State {
   init () {}
 
   preload () {
-    this.loaderBg = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'loaderBg')
-    this.loaderBar = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'loaderBar')
-    centerGameObjects([this.loaderBg, this.loaderBar])
+    //this.loaderBg = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'loaderBg')
+    //this.loaderBar = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'loaderBar')
+    //centerGameObjects([this.loaderBg, this.loaderBar])
+    //this.sky = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'sky')
 
-    this.load.setPreloadSprite(this.loaderBar)
+    //this.load.setPreloadSprite(this.sky)
     //
     // load your assets
     //
-    this.load.image('mushroom', 'assets/images/mushroom2.png')
+    //this.load.image('mushroom', 'assets/images/mushroom2.png')
+
+    //this.load.image('sky', 'src/games/firstgame/assets/sky.png');
+    //this.load.image('sky', 'assets/images/sky.png')
+    this.add.image(0, 0, 'sky')
   }
 
   create () {
